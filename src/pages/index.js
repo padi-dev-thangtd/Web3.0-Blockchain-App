@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { RouteConstant } from "src/constants/RouteConstant";
-import styles from "../styles/Home.module.css";
+import HomeView from "src/modules/home/views/HomeView";
 
 const Home = (props) => {
   const dispatch = useDispatch();
@@ -10,7 +10,11 @@ const Home = (props) => {
   // useEffect(() => {
   //   router.push(RouteConstant.Hr);
   // });
-  return <div className={styles.container}>HOmes page</div>;
+  return (
+    <div>
+      <HomeView />
+    </div>
+  );
 };
 
 export default Home;

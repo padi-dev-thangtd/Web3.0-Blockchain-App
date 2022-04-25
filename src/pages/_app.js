@@ -1,13 +1,11 @@
-import { Layout } from 'src/layouts/Layout';
-import { ToastContainer } from 'react-toastify';
-import 'src/styles/globals.css';
 import { Fragment } from 'react';
-import { Provider, useSelector } from 'react-redux';
-import { persistor, makeStore } from 'src/app/store';
+import { useSelector } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
 import { wrapper } from 'src/app/store';
-import { PersistGate } from 'redux-persist/integration/react';
 import { useLoadingSelector } from 'src/app/store/slices/CommonSlice';
-import Loading from 'src/modules/loading/Loading';
+import Loading from 'src/components/loading/Loading';
+import { Layout } from 'src/layouts/Layout';
+import 'src/styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   const loading = useSelector(useLoadingSelector);
