@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { RouteConstant } from "src/constants/RouteConstant";
+import LayoutDocument from "src/layouts/LayoutDocument";
 import HomeView from "src/modules/home/views/HomeView";
 
 const Home = (props) => {
@@ -11,9 +12,9 @@ const Home = (props) => {
   //   router.push(RouteConstant.Hr);
   // });
   return (
-    <div>
+    <LayoutDocument>
       <HomeView />
-    </div>
+    </LayoutDocument>
   );
 };
 

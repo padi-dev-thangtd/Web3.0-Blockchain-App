@@ -1,13 +1,13 @@
-import Image from 'next/image';
-import React, { useEffect } from 'react';
-import Button from 'src/common/Button/Button';
-import Image404 from 'public/assets/images/404.png';
-import Text from 'src/common/Text/Text';
-import LogoPC from 'src/common/Logo/Logo';
-import { toast } from 'react-toastify';
+import Image from "next/image";
+import React, { useEffect } from "react";
+import Button from "src/common/Button/Button";
+import Image404 from "public/assets/images/404.png";
+import Text from "src/common/Text/Text";
+import LogoPC from "src/common/Logo/Logo";
+import { toast } from "react-toastify";
 export default function Page404() {
   useEffect(() => {
-    toast.error('Server error, please try again later.');
+    toast.error("Server error, please try again later.");
   }, []);
   return (
     <div className="page-404 p-[40px]">
@@ -23,10 +23,7 @@ export default function Page404() {
             </div>
             <Text text="Compare the two words and decide whether their meaning is almost the same or opposite. For same meaning, click right button. For oppsites, click the left button. For skip question, click the up button. You can use Computer keyboard instead" />
           </div>
-          <Button
-            text="CTA here"
-            classNameBox="bg-[#009DBE] md:max-w-[400px]"
-          />
+          <div>CTA here</div>
         </div>
       </div>
     </div>
