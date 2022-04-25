@@ -1,0 +1,41 @@
+.line-playing-assessment {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #99d8e5 53.06%,
+    #ffffff 101.45%
+  );
+}
+.carousel .control-dots {
+  position: fixed !important;
+  bottom: 35px !important;
+  width: fit-content !important;
+  margin: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.carousel .control-dots .dot {
+  width: 20px !important;
+  height: 20px !important;
+  background: #dedddd !important;
+  box-shadow: none !important;
+  opacity: unset !important;
+}
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  background: #009dbe !important;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel .control-dots {
+    bottom: 50px !important;
+  }
+  .carousel .control-dots .dot {
+    width: 12px !important;
+    height: 12px !important;
+    background: #dedddd !important;
+    box-shadow: none !important;
+    opacity: unset !important;
+  }
+}
